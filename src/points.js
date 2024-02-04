@@ -16,7 +16,7 @@ const Points = ({ percentage }) => {
                 </div>
                 <div>
                     {
-                        percentage <= 25 && <p> Strong start! You can do it!  </p>
+                        percentage <= 25 && <p> You've earned 300 points this month! Great start! You can do it!  </p>
                     }
                     {
                         percentage > 25 && percentage <= 50 && <p> You're almost halfway! Keep going! </p>
@@ -25,11 +25,11 @@ const Points = ({ percentage }) => {
                         percentage > 50 && percentage <= 75 && <p> You got this! So close!  </p>
                     }
                     {
-                        percentage > 75 && percentage <= 100 && <p> slayyyy  </p>
+                        percentage > 75 && percentage <= 100 && <p> 200 points? slayyyy  </p>
                     }
                 </div>
 
-                <button onClick={(e) => {
+                <button className="pointsButton" onClick={(e) => {
                     e.preventDefault();
                     window.location.href = '/budget/308190645117';
                 }}> Return to Goals</button>

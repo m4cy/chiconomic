@@ -2,7 +2,6 @@ import React from "react"
 
 import { useNavigate } from "react-router-dom";
 import Login from './login';
-import "./fonts/Classic_Dolly.ttf";
 import './imgs/chiconomic.png'
 window.Buffer = window.Buffer || require("buffer").Buffer;
 

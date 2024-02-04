@@ -1,7 +1,6 @@
 
-import { GoogleOAuthProvider, GoogleLogin, googleLogout, useGoogleLogin } from '@react-oauth/google';
+import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import React, { useState } from "react";
 
 

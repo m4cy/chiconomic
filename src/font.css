@@ -19,7 +19,8 @@ h1 {
     padding: 5% 43% 10% 43%;
 }
 
-button {
+
+.normalButton {
     border-radius: 40%;
     background-color: #e0218a;
     padding: 5% 3% 5% 5%;
@@ -27,16 +28,49 @@ button {
     font-family: 'classic';
     font-size: 150%;
     margin: 5%;
-    /* width: 100%; */
+}
+
+.groupButton {
+    border-radius: 40%;
+    background-color: #e0218a;
+    padding: 2% 2% 2% 2%;
+    color: white;
+    font-family: 'classic';
+    font-size: 300%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pointsButton {
+    border-radius: 40%;
+    background-color: #e0218a;
+    padding: 1% 1% 1% 1%;
+    color: white;
+    font-family: 'classic';
+    font-size: 200%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#clear {
+    clear: both;
 }
 
 .imgContainer {
     display: grid;
+    width: 80%;
     grid-template-columns: [first-col] 100%;
-    grid-template-rows: [first-row] 300px;
+    grid-template-rows: [first-row] 200px;
     position: relative;
     overflow: hidden;
+    float: left;
+}
 
+.flexContainer {
+    float: left;
+    width: 20%;
 }
 
 .background {
@@ -47,6 +81,7 @@ button {
 
 .foreground {
     width: 60%;
+    margin-top: 90px;
     grid-column-start: first-col;
     grid-row-start: second-row;
     animation: carmove 5s linear both infinite alternate;
@@ -58,7 +93,7 @@ button {
     }
 
     to {
-        transform: translateX(600px);
+        transform: translateX(400px);
     }
 }
 
@@ -66,15 +101,46 @@ button {
     background-color: pink;
 }
 
-/* .flexContainer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 50px;
-} */
-
 .closetImage {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    grid-column-start: second-col;
+    grid-row-start: second-row;
+}
+
+.hoverImage {
+    width: 200px;
+    height: 200px;
+    grid-column-start: second-col;
+    grid-row-start: second-row;
+    opacity: 0.0;
+}
+
+.hoverImage:hover {
+    opacity: 1.0;
+}
+
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    margin: 5%;
+
+}
+
+.productContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: [first-col] 0%;
+    grid-template-rows: [first-row] 0%;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
 }

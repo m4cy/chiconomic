@@ -12,27 +12,30 @@ const MiniMe = (props) => {
     return <>
         <div className="specialContainer">
             <h1> Mini-Me </h1>
-            <div className="imgContainer">
-                <img className="background" src={require('./imgs/paris.png')} />
-                <img className="foreground" src={cat} />
-            </div>
-            <div className="flexContainer">
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/shoppe/308190645117';
-                }}> Customize</button>
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/budget/308190645117';
-                }}> See Goals </button>
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/resources';
-                }}> Resources </button>
-                <button onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = '/';
-                }}> Home </button>
+            <div className="sideContainer">
+                <div className="imgContainer">
+                    <img className="background" src={require('./imgs/paris.png')} />
+                    <img className="foreground" src={cat} />
+                </div>
+                <div className="flexContainer">
+                    <button className="groupButton" onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = '/shoppe/308190645117';
+                    }}> Customize</button>
+                    <button className="groupButton" onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = '/budget/308190645117';
+                    }}> See Goals </button>
+                    <button className="groupButton" onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = '/resources';
+                    }}> Resources </button>
+                    <button className="groupButton" onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = '/';
+                    }}> Home </button>
+                </div>
+                <div className="clear"></div>
             </div>
         </div>
     </>
