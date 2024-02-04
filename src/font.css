@@ -1,0 +1,80 @@
+/* styles.css or styles.scss */
+@font-face {
+    font-family: "classic";
+    /*Can be any text*/
+    src: local("Classic_Dolly"),
+        url("./fonts/Classic_Dolly.ttf") format("truetype");
+}
+
+h1 {
+    font-family: 'classic', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+}
+
+.tableContainer {
+    border-radius: 15% 15% 0% 0%;
+    background-color: white;
+    padding: 5% 43% 10% 43%;
+}
+
+button {
+    border-radius: 40%;
+    background-color: #e0218a;
+    padding: 5% 3% 5% 5%;
+    color: white;
+    font-family: 'classic';
+    font-size: 150%;
+    margin: 5%;
+    /* width: 100%; */
+}
+
+.imgContainer {
+    display: grid;
+    grid-template-columns: [first-col] 100%;
+    grid-template-rows: [first-row] 300px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.background {
+    grid-column-start: first-col;
+    grid-row-start: first-row;
+    border-radius: 10%;
+}
+
+.foreground {
+    width: 60%;
+    grid-column-start: first-col;
+    grid-row-start: second-row;
+    animation: carmove 5s linear both infinite alternate;
+}
+
+@keyframes carmove {
+    from {
+        transform: translateX(200px);
+    }
+
+    to {
+        transform: translateX(600px);
+    }
+}
+
+.specialContainer {
+    background-color: pink;
+}
+
+/* .flexContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+} */
+
+.closetImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
